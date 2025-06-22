@@ -42,35 +42,35 @@ Admin users can manage products, users, and orders. The platform integrates with
 
 ---
 
-## 📁 Folder Structure
+## 📁 Project Folder Structure
+
 ecom/
 ├── backend/ # Express API & server-side code
-│ ├── config/ # Database config
-│ ├── controllers/ # Route controllers (user, product, order)
-│ ├── data/ # Sample data for seeding
-│ ├── middleware/ # Auth & error handling middleware
-│ ├── models/ # Mongoose models (User, Product, Order)
-│ ├── routes/ # API route definitions
-│ ├── utils/ # Utility functions (e.g., JWT token)
-│ ├── seeder.js # Database seeder script
-│ └── server.js # Main server file
+│   ├── config/         # Database configuration (e.g., MongoDB)
+│   ├── controllers/    # Controllers for users, products, orders
+│   ├── data/           # Sample data files (products.js, users.js)
+│   ├── middleware/     # Custom middleware (auth, error handling)
+│   ├── models/         # Mongoose models (User, Product, Order)
+│   ├── routes/         # API route files (productRoutes, userRoutes, etc.)
+│   ├── utils/          # Utility functions (e.g., JWT token generator)
+│   ├── seeder.js       # Script to seed the database
+│   └── server.js       # Main server entry point (Express setup)
 │
-├── frontend/ # React client app
-│ ├── public/ # Static assets (images, favicon, etc.)
-│ └── src/ # Source code
-│ ├── actions/ # Redux actions
-│ ├── components/ # Reusable UI components
-│ ├── constants/ # Redux constants
-│ ├── reducers/ # Redux reducers
-│ ├── screens/ # Page components (Home, Cart, Admin, etc.)
-│ ├── store.js # Redux store setup
-│ └── App.js # Main app component
+├── frontend/           # React client app
+│   ├── public/         # Static assets (index.html, favicon, etc.)
+│   └── src/            # React app source code
+│       ├── actions/        # Redux actions
+│       ├── components/     # Reusable components (Header, Footer, etc.)
+│       ├── constants/      # Redux constants
+│       ├── reducers/       # Redux reducers
+│       ├── screens/        # Page components (HomeScreen, CartScreen, etc.)
+│       ├── store.js        # Redux store configuration
+│       └── App.js          # Main React App component
 │
-├── uploads/ # Uploaded product images
-│
-├── package.json # Project scripts and dependencies
-├── Procfile # Deployment process file (Heroku/Render)
-├── .gitignore # Files/folders to ignore in git
-└── README.md # Project documentation
+├── uploads/            # Uploaded product images (via multer)
+├── package.json        # Project-level scripts and dependencies
+├── Procfile            # Deployment configuration (for Heroku/Render)
+├── .gitignore          # Git ignored files/folders
+└── README.md           # Project documentation
 
 
